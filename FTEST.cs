@@ -21,7 +21,9 @@ namespace GSM
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+            string chuoi = textBox2.Text;
+            chuoi = Libary.Instance.tachsharepage(chuoi);
+            Console.WriteLine(chuoi);
 
         }
     }

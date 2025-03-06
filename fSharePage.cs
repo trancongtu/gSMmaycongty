@@ -42,7 +42,7 @@ namespace GSM
                 ChromeDriver Driver = new ChromeDriver(options);
                 Actions action = new Actions(Driver);
                 Driver.Url = txbLinkPage.Text;              
-                Libary.Instance.randomtime(6000, 10000);
+                Libary.Instance.RandomTime(6000, 10000);
                 int sodem = 0;
                 while (sodem < 10)
                 {
@@ -57,7 +57,7 @@ namespace GSM
                         //IWebElement buttonshare = element.FindElement(By.CssSelector("div[class = 'x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x2lah0s x193iq5w xeuugli xg83lxy x1h0ha7o x10b6aqq x1yrsyyn']"));
                         action.MoveToElement(element).Build().Perform();
                         action.Click(element).Build().Perform();//click xem chia sẻ
-                        Libary.Instance.randomtime(5000, 10000);
+                        Libary.Instance.RandomTime(5000, 10000);
                         /* if(element.Enabled == true)
                          {
                              IWebElement buttonclose = Driver.FindElement(By.CssSelector("div[class = 'x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x87ps6o x1lku1pv x1a2a7pz x6s0dn4 xzolkzo x12go9s9 x1rnf11y xprq8jg x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xl56j7k xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 xc9qbxq x14qfxbe x1qhmfi1']"));
@@ -71,7 +71,7 @@ namespace GSM
                             int new_count = 0;
                             do // trong khi lượt like thay đổi thì kéo đi kéo lại để hiện
                             {
-                                Libary.Instance.randomtime(6000, 10000);
+                                Libary.Instance.RandomTime(6000, 10000);
                                 //last_count = Driver.FindElements(By.XPath("//div[@class = 'xb57i2i x1q594ok x5lxg6s xdt5ytf x6ikm8r x1ja2u2z x1pq812k x1rohswg xfk6m8 x1yqm8si xjx87ck x1l7klhg x1iyjqo2 xs83m0k x2lwn1j xx8ngbg xwo3gff x1oyok0e x1odjw0f x1e4zzel x1n2onr6 xq1qtft x78zum5 x179dxpb']")).Count();
                                 last_count = Driver.FindElements(By.CssSelector("div[class = 'x1yztbdb']")).Count();
                                 Console.WriteLine(last_count);
@@ -85,7 +85,7 @@ namespace GSM
                                     element2.SendKeys(Keys.Down);
                                     element2.SendKeys(Keys.Down);
                                     element2.SendKeys(Keys.Down);
-                                    Libary.Instance.randomtime(6000, 10000);
+                                    Libary.Instance.RandomTime(6000, 10000);
                                 }
 
                                 new_count = Driver.FindElements(By.CssSelector("div[class = 'x1yztbdb']")).Count();

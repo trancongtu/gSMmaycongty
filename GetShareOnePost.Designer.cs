@@ -39,6 +39,7 @@
             this.songtai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dentu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thongtinkhac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +52,8 @@
             // 
             // btnShearch
             // 
+            this.btnShearch.Font = new System.Drawing.Font("Stencil Std", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShearch.ForeColor = System.Drawing.Color.Red;
             this.btnShearch.Location = new System.Drawing.Point(810, 84);
             this.btnShearch.Name = "btnShearch";
             this.btnShearch.Size = new System.Drawing.Size(75, 56);
@@ -125,11 +128,23 @@
             this.thongtinkhac.Name = "thongtinkhac";
             this.thongtinkhac.Width = 150;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(24, 97);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Địa Chỉ Bài Viết";
+            // 
             // GetShareOnePost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1196, 587);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnShearch);
             this.Controls.Add(this.txbLinkPost);
@@ -154,5 +169,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn songtai;
         private System.Windows.Forms.DataGridViewTextBoxColumn dentu;
         private System.Windows.Forms.DataGridViewTextBoxColumn thongtinkhac;
+        private System.Windows.Forms.Label label1;
     }
 }
