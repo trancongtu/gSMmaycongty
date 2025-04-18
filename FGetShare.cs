@@ -28,12 +28,13 @@ namespace GSM
             ChromeDriver driver = Libary.Instance.khoitao(profile);
             List<PersonShare> listpersonshare = new List<PersonShare>();
             listpersonshare = Libary.Instance.GetShareOnePost(driver,diachibv);
-            int j = 1;
-            foreach (PersonShare share in listpersonshare)
+            //int j = 1;
+           /* foreach (PersonShare share in listpersonshare)
             {
                 Person person = Libary.Instance.thongtinperson(driver, share.LinkFb);
                 dataGridView1.Rows.Add(j++,share.DiachiShare.ToString(), person.LinkFb.ToString(), person.DisplayName.ToString(), person.Live.ToString(), person.From.ToString());
             }
+           */
         }
     }
 }

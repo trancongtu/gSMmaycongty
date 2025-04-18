@@ -27,10 +27,10 @@ namespace GSM
             string profile = "D://CODE/Project/GSM/TCT2025";
            
             ChromeDriver driver = Libary.Instance.khoitao(profile);
-            List<Post> post = new List<Post>();
+            List<ShearchPost> post = new List<ShearchPost>();
             post = Libary.Instance.GetPostOnePage(driver, linkbv, "", soluong, post);         
             int j = 1;
-            foreach (Post post2 in post)
+            foreach (ShearchPost post2 in post)
             {              
                 dataGridView1.Rows.Add(j++, post2.DiaChi.ToString(), post2.ThoiGian.ToString(), post2.NoiDung.ToString(),post2.ChiaSe.ToString(), post2.BinhLuan.ToString()) ;
             }

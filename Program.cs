@@ -17,7 +17,7 @@ namespace GSM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GetShareOnePost());
+            Application.Run(new FGroupsGSM());
         }
     }
 }

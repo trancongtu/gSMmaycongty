@@ -100,7 +100,7 @@ namespace GSM
                             string diachi = element3.GetAttribute("href");
                             string diachishare = Libary.Instance.rutgonlinkshare(diachi);
                             string linkfb = Libary.Instance.xulylinkperson(diachi);
-                            personshare.Add(new PersonShare(diachishare, linkfb));                         
+                            personshare.Add(new PersonShare(diachishare, linkfb, ""));                         
                         }
                         sodem++;
                         /*
@@ -122,7 +122,7 @@ namespace GSM
                     }
 
                 }
-                int j = 1; int test = 0;
+                /*int j = 1; int test = 0;
                 if(personshare.Count > 0)
                 {
                     foreach (PersonShare ps in personshare)
@@ -130,9 +130,9 @@ namespace GSM
                        
                          if (persons.Count() == 0)
                          {
-                             Person person = Libary.Instance.thongtinperson(Driver, ps.LinkFb.ToString());
+                             Person person = Libary.Instance.ThongtinPerson(Driver, ps.LinkFb.ToString());
                              persons.Add(person);
-                             dgvSharePage.Rows.Add(j++, ps.DiachiShare.ToString(),ps.LinkFb.ToString(), person.DisplayName.ToString(), person.Live.ToString(), person.From.ToString());
+                             dgvSharePage.Rows.Add(j++, ps.DiachiShare.ToString(),ps.LinkFb.ToString(), person.TenFb.ToString(), person.NoiSong.ToString(), person.DenTu.ToString());
                          }
                          else
                          {
@@ -145,15 +145,15 @@ namespace GSM
                              }
                              if(test == 1)
                             {
-                                Person person = Libary.Instance.thongtinperson(Driver, ps.LinkFb.ToString());
+                                Person person = Libary.Instance.ThongtinPerson(Driver, ps.LinkFb.ToString());
                                 persons.Add(person);
-                                dgvSharePage.Rows.Add(j++, ps.DiachiShare.ToString(), ps.LinkFb.ToString(), person.DisplayName.ToString(), person.Live.ToString(), person.From.ToString());
+                                dgvSharePage.Rows.Add(j++, ps.DiachiShare.ToString(), ps.LinkFb.ToString(), person.TenFb.ToString(), person.NoiSong.ToString(), person.DenTu.ToString());
                                 test = 0;
                             }    
                          }
                     }
                    
-                }   
+                }  */ 
             }
         }
     }

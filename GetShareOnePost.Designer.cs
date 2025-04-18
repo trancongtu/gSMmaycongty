@@ -30,7 +30,7 @@
         {
             this.txbLinkPost = new System.Windows.Forms.TextBox();
             this.btnShearch = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvGetShareOnePost = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LinkShare = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LinkFb = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,7 +40,8 @@
             this.dentu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thongtinkhac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnSavePerson = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGetShareOnePost)).BeginInit();
             this.SuspendLayout();
             // 
             // txbLinkPost
@@ -62,11 +63,11 @@
             this.btnShearch.UseVisualStyleBackColor = true;
             this.btnShearch.Click += new System.EventHandler(this.btnShearch_Click);
             // 
-            // dataGridView1
+            // dgvGetShareOnePost
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvGetShareOnePost.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvGetShareOnePost.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGetShareOnePost.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
             this.LinkShare,
             this.LinkFb,
@@ -75,10 +76,10 @@
             this.songtai,
             this.dentu,
             this.thongtinkhac});
-            this.dataGridView1.Location = new System.Drawing.Point(48, 182);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1136, 379);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvGetShareOnePost.Location = new System.Drawing.Point(48, 182);
+            this.dgvGetShareOnePost.Name = "dgvGetShareOnePost";
+            this.dgvGetShareOnePost.Size = new System.Drawing.Size(1136, 379);
+            this.dgvGetShareOnePost.TabIndex = 2;
             // 
             // STT
             // 
@@ -139,18 +140,29 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Địa Chỉ Bài Viết";
             // 
+            // btnSavePerson
+            // 
+            this.btnSavePerson.Location = new System.Drawing.Point(927, 87);
+            this.btnSavePerson.Name = "btnSavePerson";
+            this.btnSavePerson.Size = new System.Drawing.Size(65, 52);
+            this.btnSavePerson.TabIndex = 4;
+            this.btnSavePerson.Text = "Lưu Đối Tượng";
+            this.btnSavePerson.UseVisualStyleBackColor = true;
+            this.btnSavePerson.Click += new System.EventHandler(this.btnSavePerson_Click);
+            // 
             // GetShareOnePost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1196, 587);
+            this.Controls.Add(this.btnSavePerson);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvGetShareOnePost);
             this.Controls.Add(this.btnShearch);
             this.Controls.Add(this.txbLinkPost);
             this.Name = "GetShareOnePost";
             this.Text = "GetShareOnePost";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGetShareOnePost)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,7 +172,7 @@
 
         private System.Windows.Forms.TextBox txbLinkPost;
         private System.Windows.Forms.Button btnShearch;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvGetShareOnePost;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn LinkShare;
         private System.Windows.Forms.DataGridViewTextBoxColumn LinkFb;
@@ -170,5 +182,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dentu;
         private System.Windows.Forms.DataGridViewTextBoxColumn thongtinkhac;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSavePerson;
     }
 }
